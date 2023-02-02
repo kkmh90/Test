@@ -122,17 +122,18 @@
 
 #review_nav a {
   display: inline-block;
-  padding: 3px 5px;
+  padding: 3px 10px;
   margin-right: 10px;
-  font-family: Tahoma;
-  background: #ccc;
+  background: rgb(255, 255, 255);
   color: #000;
   text-decoration: none;
+  font-weight: 600;
 }
 
 #review_nav a.active {
-  background: #333;
-  color: #fff;
+  background: rgb(89, 89, 253);
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
 }
 
 .info_review {
@@ -1299,6 +1300,21 @@ h6 {
   #hero {
     height: 150vh;
   }
+}
+
+/*--------------------------------------------------------------
+# Scroll
+--------------------------------------------------------------*/
+html, body {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+.section {
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 
 /*--------------------------------------------------------------

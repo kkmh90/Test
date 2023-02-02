@@ -5,13 +5,10 @@
 * License: https://bootstrapmade.com/license/
 */
 
-
-
-
 window.onload = () => {
   // panel-faq-container
   const panelFaqContainer = document.querySelectorAll(".panel-faq-container"); // NodeList 객체
-  
+
   // panel-faq-answer
   let panelFaqAnswer = document.querySelectorAll(".panel-faq-answer");
 
@@ -19,7 +16,7 @@ window.onload = () => {
 
   // btn-all-close
   const btnAllClose = document.querySelector("#btn-all-close");
-  
+
   // 반복문 순회하면서 해당 FAQ제목 클릭시 콜백 처리
   for( let i=0; i < panelFaqContainer.length; i++ ) {
     panelFaqContainer[i].addEventListener('click', function() { // 클릭시 처리할 일
@@ -28,9 +25,9 @@ window.onload = () => {
       panelFaqTitle[i].classList.toggle('click');
     });
   };
-  
+
   btnAllClose.addEventListener('click', function() {
-    // 버튼 클릭시 처리할 일  
+    // 버튼 클릭시 처리할 일
     for(let i=0; i < panelFaqAnswer.length; i++) {
         panelFaqAnswer[i].classList.remove('active1');
         panelFaqTitle[i].classList.remove('click');
@@ -68,7 +65,7 @@ window.onload = () => {
   }
 
   /**
-   * Easy on scroll event listener 
+   * Easy on scroll event listener
    */
   const onscroll = (el, listener) => {
     el.addEventListener('scroll', listener)
@@ -211,7 +208,7 @@ window.onload = () => {
   });
 
   /**
-   * Initiate portfolio lightbox 
+   * Initiate portfolio lightbox
    */
   const portfolioLightbox = GLightbox({
     selector: '.portfolio-lightbox'
