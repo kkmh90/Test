@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ko">
+
+<head>
+{% include 'webapp/html/head.html' %}
+</head>
+
+<body>
+{% include 'webapp/html/header.html' %}
+{% include 'webapp/html/hero.html' %}
+<main id="main">
+    {% include 'webapp/html/about.html' %}
+    {% include 'webapp/html/accordion.html' %}
+    {% include 'webapp/html/cta.html' %}
+    {% include 'webapp/html/team.html' %}
+    {% include 'webapp/html/cta2.html' %}
+    {% include 'webapp/html/contact.html' %}
+</main><!-- End #main -->
+
+<!-- Footer + Modal -->
+{% include 'webapp/html/footer.html' %}
+{% include 'webapp/html/omo_edit.html' %}
+{% include 'webapp/html/login_temp.html' %}
+{% include 'webapp/html/logout_temp.html' %}
+
+<!--js -->
+{% include 'webapp/html/js.html' %}
+</body>
+
+</html>
